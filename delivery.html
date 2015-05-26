@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Delivery</title>
+
+</head>
+<style>
+    body{
+        background-image: url("Contact-Us-background.jpg");
+
+
+    }
+
+    .up{
+        background-color: rgb(255, 69, 0);
+        height: 180px;
+        width: 1255px;
+        margin: -20px auto auto auto;
+    }
+
+    h1
+    {
+        text-align: center;
+        text-shadow: 3px 3px 3px black;
+
+    }
+
+    .f{
+        font-size: 80px;
+        font-family: serif;
+        letter-spacing: 4px;
+        color: white;
+
+    }
+    .c{
+
+        font-size: 70px;
+        font-family: fantasy;
+        letter-spacing: 2px;
+        color: #000;
+        font-weight: normal;
+
+    }
+    nav>a{
+        padding: 10px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 13px auto 6px auto;
+        text-transform: capitalize;
+    }
+    nav>a:hover{
+        color: white;
+
+    }
+    nav{
+        text-indent: 120px;
+        height: 50px;
+        margin: -2px 120px auto auto;
+        text-align: center;
+    }
+    .order{
+        height: 750px;
+        width: 600px;
+        text-align: center;
+        margin: 40px auto auto auto;
+        float: left;
+    }
+    fieldset{
+        margin: 20px auto auto auto;
+        height: 750px;
+        width: 400px;
+        background-color: white;
+        border: 3px solid;
+        border-radius: 10px;
+    }
+    legend{
+        font-size: 50px;
+        font-family: sans-serif;
+        border-radius: 5px;
+        letter-spacing: 8px;
+        border: 3px solid #000000;
+        padding: 5px;
+        font-weight: bold;
+        background-color: #ff3533;
+    }
+    label{
+        display: block;
+        padding: 18px;
+
+    }
+    input{
+        height: 40px;
+        width: 350px;
+        font-size: 20px;
+        border: 2px solid #535353;
+        border-radius: 5px;
+    }
+    #order{
+        height: 80px;
+        padding: 5px;
+    }
+    textarea{
+        height: 80px;
+        width: 350px;
+        font-size: 20px;
+        border: 2px solid #535353;
+        border-radius: 5px;
+
+    }
+    button[class="submit"]{
+        height: 40px;
+        width: 300px;
+        font-size: 30px;
+        border: 1px solid #000000;
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+    }
+    button[class="submit"]:hover{
+        cursor: pointer;
+
+    }
+    .amount{
+        margin: 80px auto auto 650px;
+        height: 170px;
+        width: 400px ;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #000000;
+
+    }
+    #price{
+        margin: 20px auto auto 25px;
+        height: 60px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .heading{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 50px;
+        color: #000000;
+        margin: 10px auto auto 50px;
+    }
+</style>
+
+
+<body>
+<div>
+    <div class="up">
+        <div><h1 class="fc"><b class="f">Food</b><b class="c">court</b></h1>
+        </div>
+
+        <nav>
+            <a href="home.html">Home |</a>
+            <a href="New%20deals.html">New Deals |</a>
+            <a href="Contact%20us.html">Contact us |</a>
+            <a href="About%20us.html">About us |</a>
+
+        </nav>
+        <div class="order">
+<fieldset>
+    <legend>
+        Delivery
+    </legend>
+    <form action="Mcdonald.html" method="get">
+    <label>
+    <input type="text" name="username" placeholder="Enter you name" required="required">
+        </label>
+    <label>
+        <input type="text" name="city" placeholder="Enter your City" required="required">
+    </label>
+        <label><input type="text" name="address" placeholder="Enter your address" required="required">
+        </label>
+        <label>
+            <input type="number" name="cell number" placeholder="Enter your Ph. number" required="required">
+        </label>
+        <label>
+            <input type="text" name="order" placeholder="Your Order" id="order" onload="compare()" >
+
+        </label>
+        <label>
+            <textarea placeholder="Enter your comments"></textarea>
+        </label>
+
+        <label>
+            <button type="submit" class="submit">Submit Order</button>
+        </label>
+</form>
+</fieldset>
+
+</div>
+
+</div>
+    </div>
+<div class="amount">
+    <p class="heading">Your Amount</p>
+    <input type="tel" id="price">
+</div>
+<script src="Foodcourt(javafile).js">
+</script>
+</body>
+</html>

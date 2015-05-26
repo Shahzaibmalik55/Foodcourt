@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza Hurt</title>
+    <style>
+
+        body{
+            background-image:  url("Contact-Us-background.jpg") ;
+
+        }
+
+        .up{
+            background-color: rgb(255, 69, 0);
+            height: 180px;
+            width: 1255px;
+            margin: -20px auto auto auto;
+        }
+
+        h1
+        {
+            text-align: center;
+
+            text-shadow: 3px 3px 3px black;
+
+        }
+
+        .f{
+            font-size: 80px;
+            font-family: serif;
+            letter-spacing: 4px;
+            color: white;
+
+        }
+        .c{
+
+            font-size: 70px;
+            font-family: fantasy;
+            letter-spacing: 2px;
+            color: #000;
+            font-weight: normal;
+
+        }
+        nav>a{
+            padding: 10px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 13px auto 6px auto;
+            text-transform: capitalize;
+        }
+        nav>a:hover{
+            color: white;
+
+        }
+        nav{
+            text-indent: 120px;
+            height: 50px;
+            margin: -45px 120px auto auto;
+            text-align: center;
+        }
+        .images{
+            height: 1200px;
+            width: 1200px;
+            background-color: floralwhite;
+            margin: 30px auto auto auto;
+            border-radius: 20px;
+        }
+        table
+        {
+            text-align: center;
+            border: 2px solid #000000;
+        }
+        img{
+            margin: 30px auto auto auto;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        p{
+            text-indent: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-transform: capitalize;
+
+        }
+
+        b[class="price"]
+        {
+            margin: 20px auto auto 50px;
+            color: white;
+            border: 1px solid #000000;
+            background-color: #000000;
+            border-radius: 10px;
+            width: 200px;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: sans-serif;
+
+
+        }
+
+        button
+        {
+            margin: -50px auto auto 30px;
+            height: 40px;
+            width: 70px;
+            font-weight: bold;
+            background-color: coral;
+            border-radius: 8px;font-family: cursive;
+            font-size: 15px;
+            text-transform: uppercase;
+
+
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        .delivery{
+            border: 2px solid #000000;
+            height: 40px;
+            width: 180px;
+            background-color: red;
+            margin: 10px 0px 0px 20px;
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px black;
+
+        }
+        .delivery>a{
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin: auto auto auto 14px;
+            font-size: 30px;
+            text-transform: capitalize;
+            color: snow;
+            font-family: sans-serif;
+
+        }
+        a>img{
+            height: 150px;
+            width: 195px;
+            margin: 10px auto auto auto;
+
+        }
+        a{
+            margin: -10px auto auto 12px;
+        }
+        .logos{
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px auto auto auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<div class="up">
+    <h1 class="fc"><b class="f">Food</b><b class="c">court</b></h1>
+
+    <div class="delivery"><a href="delivery.html" target="_blank">order here</a></div>
+
+    <nav>
+        <a href="home.html">Home |</a>
+        <a href="New%20deals.html">New Deals |</a>
+        <a href="Contact%20us.html">Contact us |</a>
+        <a href="About%20us.html">About Us |</a>
+
+    </nav>
+
+</div>
+<table class="images">
+    <tr>
+        <td><img src="pizza.jpg"><p>6' INCH mozrella cheese pizza</p>
+            <b class="price">Only RS:500</b><button id="item1" onclick="insert1();">+Add</button>
+        </td>
+        <td><img src="selera%20kita.jpg"><p>5' INCH Selera kita pizza</p>
+            <b class="price">Only RS 700</b><button id="item2" onclick="insert2();">+Add</button>
+        </td><td><img src="Beef%20chese.jpg" height="200px" width="270px"><p>6' INCH beef cheese pizza</p>
+        <b class="price">Only RS:600</b><button id="item3" onclick="insert3();">+Add</button>
+    </td>
+    </tr>
+    <tr>
+        <td><img src="chiken%20chili%20pizza.jpg"><p>6'INCH chicken chilli pizza</p>
+            <b class="price">Only RS:800</b><button id="item4" onclick="insert4();">+Add</button>
+        </td>
+        <td><img src="cheese%20pizza.jpg"><p>5'INCH chicken cheese pizza</p>
+            <b class="price">Only RS:500</b><button id="item5" onclick="insert5();">+Add</button>
+        </td>
+        <td><img src="brost.jpg" height="180px" width="280px"><p>chicken brost with fries</p>
+            <b class="price">Only RS:250</b><button id="item6" onclick="insert6();">+Add</button>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="double%20decker%20chiken%20burger.jpg"><p>double decker chicken burger with fries</p>
+            <b class="price">Only RS:350</b><button id="item7" onclick="insert7();">+Add</button>
+        </td>
+        <td><img src="crispy%20burger.jpg" width="280px" height="180px"><p>Crispy burger with fries</p>
+            <b class="price">Only RS:300</b><button id="item8" onclick="insert8();">+Add</button>
+        </td>
+        <td><img src="double%20decker.jpg"><p>double decker beef burger with fries</p>
+            <b class="price">Only RS:300</b><button id="item9" onclick="insert9();">+Add</button>
+        </td>
+    </tr>
+
+    <div class="logos"><a href="Mcdonald.html"><img src="mc%20logo.png"></a><a href="Pizzahurt.html"><img src="Pizza_Hut.png"></a><a href="Subway.html"><img src="subway%20logo.png"></a>
+        <a href="Domino.html"><img src="domino%20logo.png"></a><a href="kfc.html"><img src="kfc%20logo%202.jpg"><a href="burgerking.html"><img src="bueger%20king%20logo%20-%20Copy.jpg"></a></a>
+        <hr>
+    </div>
+
+</table>
+<script src="Foodcourt(javafile).js"></script>
+</body>2
+</html>

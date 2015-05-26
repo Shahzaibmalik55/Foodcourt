@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>New Deals</title>
+</head>
+<style>
+    body{
+        background-image: url("Contact-Us-background.jpg");
+
+    }
+
+    .up{
+        background-color: rgb(255, 69, 0);
+        height: 200px;
+        width: 1300px;
+        position: fixed;
+        top: 0%;
+        margin: -20px auto auto auto;
+
+
+    }
+
+    h1
+    {
+        text-align: center;
+        /*margin: auto auto auto auto;*/
+        text-shadow: 3px 3px 3px black;
+
+    }
+
+    .f{
+        font-size: 80px;
+        font-family: serif;
+        letter-spacing: 4px;
+        color: white;
+
+    }
+    .c{
+
+        font-size: 70px;
+        font-family: fantasy;
+        letter-spacing: 2px;
+        color: #000;
+        font-weight: normal;
+
+    }
+
+
+    nav>a{
+        padding: 10px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 13px auto 6px auto;
+        text-transform: capitalize;
+    }
+    nav>a:hover{
+        color: white;
+
+    }
+    nav{
+        text-indent: 120px;
+        height: 50px;
+        margin: -45px 120px auto auto;
+        text-align: center;
+    }
+
+    .delivery{
+        border: 2px solid #000000;
+        height: 40px;
+        width: 180px;
+        background-color: red;
+        margin: 10px 0px 0px 20px;
+        border-radius: 7px;
+        box-shadow: 2px 2px 2px black;
+
+    }
+    .delivery>a{
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        margin: auto auto auto 14px;
+        font-size: 30px;
+        text-transform: capitalize;
+        color: snow;
+        font-family: sans-serif;
+
+    }
+
+    .new deals
+    {
+        height: 2300px;
+        width: 1200px;
+        margin: 200px auto auto 2px;
+        border: 1px solid #000000 ;
+        border-radius: 10px;
+
+    }
+    .deals{
+        margin: 200px 30px 10px 30px;
+        border-radius: 10px;
+    }
+    img{
+        margin: auto auto auto 20px;
+    }
+    figcaption{
+        text-indent: 50px;
+        font-size: 20px;
+        font-family:serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin: auto auto auto -10px;
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 15px;
+        text-transform: capitalize;
+        margin: 10px auto 20px 2px;
+        color: #000000;
+        height: 50px;
+        width: 300px;
+        padding: 5px 5px 5px 15px;
+        font-weight: bold;
+        border-radius: 8px;
+        background-color: white;
+        border: 2px solid #000000;
+        font-family: serif;
+
+
+
+    }
+    .price{
+        font-size: 25px;
+        border: 1px solid #000000;
+        padding: 5px;
+        margin: auto auto auto 80px;
+        text-transform: capitalize;
+        background-color: red;
+        color: white;
+        font-family: cursive;
+        width: 200px;
+        height: 110px;
+        text-align: center;
+        text-indent: 200px;
+
+    }
+    input[type="button"]{
+         height: 40px;
+         width: 170px;
+         margin: 10px auto auto 75px;
+         font-size: 26px;
+        font-family: monospace;
+        letter-spacing: 2px;
+        background-color: steelblue;
+        border-radius: 10px;
+        text-transform: capitalize;
+
+
+    }
+    input[type="button"]:hover{
+        cursor: pointer;
+    }
+    figure{
+        margin: 10px auto auto 35px;
+    }
+    img{
+        border-radius: 10px;
+        height: 200px;
+        width: 300px;
+        margin: 30px auto auto auto;
+    }
+    .logos{
+        background-color: white;
+        border-radius: 10px;
+        margin: 20px auto auto auto;
+    }
+    a>img{
+         height: 150px;
+         width: 195px;
+         margin: 10px auto auto auto;
+
+     }
+    a{
+        margin: -10px auto auto 12px;
+    }
+    hr{
+        background-color: #000000;
+    }
+</style>
+<body>
+<div class="up">
+    <h1 class="fc"><b class="f">Food</b><b class="c">court</b></h1>
+
+    <div class="delivery"><a href="delivery.html" target="_blank">order here</a></div>
+
+    <nav>
+        <a href="home.html">Home |</a>
+        <a href="New%20deals.html">New Deals |</a>
+        <a href="Contact%20us.html">Contact us |</a>
+        <a href="About%20us.html">About us |</a>
+
+    </nav>
+
+</div>
+<div class="deals">
+    <table class="new deals">
+        <tr>
+            <td>
+                <figure>
+                    <img src="combo%20deal.jpg">
+                    <figcaption>Mcdonald's Combo deal</figcaption>
+                    <p>one chicken double decker burger,one regular fries and one regular drink
+
+                    </p>
+                    <b class="price">only Rs:500</b><br>  <input type="button" value="+ADD" id="deal1" onclick="add1();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="dael2.jpg">
+                    <figcaption>Mcdonald's Summer's deal</figcaption>
+                    <p>one Qtr.Chicken Brost,one regular fries two ice cream and regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:700</b> <br> <input type="button" value="+ADD"  id="deal2" onclick="add2();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="deal%203.jpg">
+                    <figcaption>Mcdonald's Big deal</figcaption>
+                    <p>one beef double decker burger,<br>one regular fries and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:500</b> <br><input type="button" value="+ADD"  id="deal3" onclick="add3();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="deal.jpg">
+                    <figcaption>Mcdonald's Turkish deal</figcaption>
+                    <p>one turkish chicken burger,<br>one regular fries
+
+                    </p>
+                    <b class="price">only Rs:400</b><br>  <input type="button" value="+ADD"  id="deal4" onclick="add4();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="deal%202.jpg">
+                    <figcaption>Mcdonald's Spicy deal</figcaption>
+                    <p>two chicken spicy burger,<br>two spicy twister roll<br>
+
+                    </p>
+                    <b class="price">only Rs:700</b> <br>  <input type="button" value="+ADD"  id="deal5" onclick="add5();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="b.jpg">
+                    <figcaption>Mcdonald's deal</figcaption>
+                    <p>one beef burger,one regular fries <br>
+
+                    </p>
+                    <b class="price">only Rs:300</b> <br>  <input type="button" value="+ADD"  id="deal6" onclick="add6();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="hapy%20meal.jpg">
+                    <figcaption>Mcdonald's Happy Meal</figcaption>
+                    <p>4 chicken nuggets,one vanilla shake<br>and one regular fries<br>
+
+                    </p>
+                    <b class="price">only Rs:450</b><br>   <input type="button" value="+ADD"  id="deal7" onclick="add7();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="mega%20burger.jpg">
+                    <figcaption>Mcdonald's Mega deal</figcaption>
+                    <p>one chicken crispy burger,<br>one piece of broost, piece of bun with fries<br>
+
+                    </p>
+                    <b class="price">only Rs:550</b> <br>  <input type="button" value="+ADD"  id="deal8" onclick="add8();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="thai%20chiken%20burger.jpg">
+                    <figcaption>Mcdonald's Wochen Deal</figcaption>
+                    <p>one argentinan chicken burger,one<br> south african  burger and one thai chicken burger<br>
+
+                    </p>
+                    <b class="price">only Rs:800</b> <br>  <input type="button" value="+ADD"  id="deal9" onclick="add9();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="kfc%20deal%202.jpg">
+                    <figcaption>KFC Streetwise deal</figcaption>
+                    <p>one chicken broost,<br>one bun and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:200</b><br>   <input type="button" value="+ADD"  id="deal10" onclick="add10();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="kfc%20deal%203.jpg">
+                    <figcaption>KFC Family deal</figcaption>
+                    <p>four chicken crispy burger,two piece of bun,two chicken broost and one 1.5 liter drink<br>
+
+                    </p>
+                    <b class="price">only Rs:1295</b> <br>  <input type="button" value="+ADD"  id="deal11" onclick="add11();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="kfc%20deal%204.jpg">
+                    <figcaption>KFC Hot Wings Deal</figcaption>
+                    <p>four piece of hot chicken wings,<br>one regular fries and one 200ml sting drink<br>
+
+                    </p>
+                    <b class="price">only Rs:200</b> <br>  <input type="button" value="+ADD"  id="deal12" onclick="add12();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="kfc%20soup.jpg">
+                    <figcaption>KFC Hot N Crispy Soup</figcaption>
+                    <p>one chcken hot n crispy soup<br>
+
+                    </p>
+                    <b class="price">only Rs:100</b><br>   <input type="button" value="+ADD"  id="deal13" onclick="add13();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="kfc%20twister%20roll%20deal.jpg">
+                    <figcaption>KFC Twister deal</figcaption>
+                    <p>one chicken crispy twister roll, and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:250</b> <br>  <input type="button" value="+ADD"  id="deal14" onclick="add14();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="kfc%20deal.jpg">
+                    <figcaption>KFC What a Deal</figcaption>
+                    <p>two chicken crispy burger,<br>one regular fries and two regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:600</b> <br>  <input type="button" value="+ADD"  id="deal15" onclick="add15();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="kfc%20double%20decker%20deal.jpg">
+                    <figcaption>KFC Double Decker deal</figcaption>
+                    <p>one crispy chicken double decker burger and one regular drink<br>
+
+                    </p>
+                    <b class="price">onlyRs: 350</b><br>  <input type="button" value="+ADD"  id="deal16" onclick="add16();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="twister.jpg">
+                    <figcaption>KFC Twister deal</figcaption>
+                    <p>one chicken cheese twister roll,one regular fries and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:375</b> <br>  <input type="button" value="+ADD"  id="deal17" onclick="add17()">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="kfc%20family%20deal.jpg">
+                    <figcaption>Mcdonald's Family Festival</figcaption>
+                    <p>four chicken crispy burger,<br>four piece of crispy leg broost and one 1.5 liter drink<br>
+
+                    </p>
+                    <b class="price">only Rs:1195</b> <br> <input type="button" value="+ADD"  id="deal18" onclick="add18()">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="burger%20king%20deal%202.%20jpg.jpg">
+                    <figcaption>Burger king Summer Serve</figcaption>
+                    <p>one chicken burger,one regular fries<br> and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:185</b><br>   <input type="button" value="+ADD"  id="deal19" onclick="add19()">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="burger%20king%20deal%203.%20jpg.jpg">
+                    <figcaption>burger king grilled deal</figcaption>
+                    <p>one grilled chicken burger,one regular fries and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:400</b> <br>  <input type="button" value="+ADD"  id="deal20" onclick="add20();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="burger%20king%20deal%204%20jpg.jpg">
+                    <figcaption>burger king super deal</figcaption>
+                    <p>one beef cheese burger,one regular fries and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:400</b> <br> <input type="button" value="+ADD"  id="deal21" onclick="add21();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="burger%20king%20beef%20grilled%20burger.jpg">
+                    <figcaption>burger king value deal</figcaption>
+                    <p>one beef grilled cheese burger,one regular fries and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:300</b><br>   <input type="button" value="+ADD"  id="deal22" onclick="add22();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="burger-king-menu-prices-list-2.jpg">
+                    <figcaption>burger king bumper deal</figcaption>
+                    <p>one chicken burger,one regular fries and one regular drink<br>and get one chicken burger free
+
+                    </p>
+                    <b class="price">only Rs:450</b> <br>  <input type="button" value="+ADD"  id="deal23" onclick="add23();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="chiken%20fries.jpg">
+                    <figcaption>burger king fries</figcaption>
+                    <p>one chicken crispy fries with garlic sauce<br>
+
+                    </p>
+                    <b class="price">only Rs:200</b> <br>  <input type="button" value="+ADD"  id="deal24" onclick="add24();">
+                </figure>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <figure>
+                    <img src="dinner%20x%20box.jpg">
+                    <figcaption>pizza hut dinner box</figcaption>
+                    <p>one chicken grilled pizza,one mozreela cheese pizza,5 piece of nuggets with chilli sauce<br>
+
+                    </p>
+                    <b class="price">only Rs:700</b><br>   <input type="button" value="+ADD" id="deal25" onclick="add25();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="pizza%20deal%202.jpg">
+                    <figcaption>pizza hut course meal</figcaption>
+                    <p>one small chicken pizza,one garlic bread and one regular drink<br>
+
+                    </p>
+                    <b class="price">only Rs:199</b> <br>  <input type="button" value="+ADD"  id="deal26" onclick="add26();">
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="pizza%20hut%20logo%20-%20Copy.jpg">
+                    <figcaption>pizza hut super deal</figcaption>
+                    <p>one 6' INCH chicken cheese pizza,10 pieces spicy chicken nuggets and 5 pieces of garlic bread<br>
+
+                    </p>
+                    <b class="price">onlyRs: 1000</b> <br> <input type="button" value="+ADD"  id="deal27" onclick="add27();">
+                </figure>
+            </td>
+
+        </tr>
+    </table>
+</div><hr/>
+
+<div class="logos"><a href="Mcdonald.html"><img src="mc%20logo.png"></a><a href="Pizzahurt.html"><img src="Pizza_Hut.png"></a><a href="Subway.html"><img src="subway%20logo.png"></a>
+    <a href="Domino.html"><img src="domino%20logo.png"></a><a href="kfc.html"><img src="kfc%20logo%202.jpg"><a href="burgerking.html"><img src="bueger%20king%20logo%20-%20Copy.jpg"></a></a>
+    <hr>
+</div>
+<script src="Foodcourt(javafile).js"></script>
+</body>
+</html>
